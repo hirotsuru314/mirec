@@ -26,6 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'omniauth'
 gem 'omniauth-hatena'
+
+gem 'natto'
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

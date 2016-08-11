@@ -1,0 +1,32 @@
+<header class="navbar navbar-inverse">
+  <div class="container">
+    <nav>
+      <h1><%= link_to 'MiRec', user_articles_path, :style=>"color:white;" %></h1>
+      <ul class="nav navbar-nav navbar-left">
+        <li><%= link_to "MiRecについて", about_path %></li>
+        <% if logged_in? %>
+          <li><%= link_to "ログアウト", logout_path, method: "delete" %></li>
+        <% end %>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "管理者", 'http://www.hirotsuru.sakura.ne.jp/portfolio/index.html', target: "_blank" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="user_articles">
+  <h1><%= image_tag(current_user.image_url, :width => '60') %><%= current_user.username %>さんへのオススメ記事</h1>
+
+  <% @rec_articles.each do |key, value| %>
+    <ul>
+      <%= link_to "#{key}", "#{value}", target: "_blank" %>
+    </ul>
+  <% end %>
+</div>
+
+ 
+
+
+
+
