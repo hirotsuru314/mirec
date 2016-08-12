@@ -32,7 +32,8 @@ gem 'omniauth'
 gem 'omniauth-hatena'
 
 gem 'natto'
-
+gem 'carrierwave'
+gem 'cloudinary'
 
 
 # Use ActiveModel has_secure_password
