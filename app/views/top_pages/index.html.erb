@@ -20,7 +20,8 @@
 
   <% @rec_articles.each do |key, value| %>
     <ul>
-      <%= link_to "#{key}", "#{value}", target: "_blank" %>
+      <li><%= link_to "#{key}", "#{value}", id: "article",  target: "_blank" %></li>
+      <hr />
     </ul>
   <% end %>
 </div>
